@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Morena Silvetti</title>
 </head>
 
 <body>
-    <header>
+    <header class="encabezado">
         <p>Morena Silvetti</p>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="habilidades.html">Habilidades</a></li>
@@ -21,38 +23,46 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Lo que estoy construyendo...</h1>
-            <h2>Aprender también es construir.</h2>
-            <p>Cada proyecto representa una oportunidad para aprender algo nuevo,
-                resolver un problema y llevar una idea desde el concepto hasta una solución funcional.</p>
+    <main class="contenido">
+        <section class="contenedor">
+            <div class="contenedor-texto">
+                <h1>Lo que estoy construyendo...</h1>
+                <h2>Aprender también es construir.</h2>
+                <p>Cada proyecto representa una oportunidad para aprender algo nuevo,
+                    resolver un problema y llevar una idea desde el concepto hasta una solución funcional.</p>
+            </div>
         </section>
 
-        <section>
-            <ul>
-                <li>
-                    <strong>Sistema de gestión de tickets</strong>
-                    <p>Aplicación web desarrollada para facilitar la carga y organización de tickets,
-                        permitiendo registrar información, adjuntar documentación y asignar los gastos
-                        correspondientes.</p>
-                </li>
-                <li>
-                    <strong>Córdoba en Perspectiva</strong>
-                    <p>Proyecto orientado a integrar datos e información territorial para facilitar el
-                        análisis y la visualización de indicadores de Córdoba.</p>
-                </li>
-                <li>
-                    <strong>Proyectos GIS</strong>
-                    <p>Exploraciones y desarrollos relacionados con sistemas de información geográfica,
-                        visualización de datos y análisis territorial.</p>
-                </li>
-            </ul>
-            <p>Este espacio va a seguir creciendo junto conmigo.</p>
+        <section class="tarjetas">
+            <article class="card">
+                <h2>Sistema de gestión de tickets</h2>
+                <p>Aplicación web desarrollada para facilitar la carga y organización de tickets,
+                    permitiendo registrar información, adjuntar documentación y asignar los gastos
+                    correspondientes.</p>
+                <img src="../assets/img/trailerops.png" alt="Gestión de tickets">
+            </article>
+            <article class="card">
+                <h2>Córdoba en Perspectiva</h2>
+                <p>Proyecto orientado a integrar datos e información territorial para facilitar el
+                    análisis y la visualización de indicadores de Córdoba.</p>
+                <img src="../assets/img/cba-perspectiva.png" alt="Dashboard provincia de Córdoba">
+            </article>
+            <article class="card">
+                <h2>Proyectos GIS</h2>
+                <p>Exploraciones y desarrollos relacionados con sistemas de información geográfica,
+                    visualización de datos y análisis territorial.</p>
+                <img src="../assets/img/agro.jpg" alt="Aplicación móvil para el agro">
+            </article>
+        </section>
+
+        <section class="contenedor">
+            <div class="contenedor-texto">
+                <p>Este espacio va a seguir creciendo junto conmigo.</p>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="pie">
         <p>© 2026 Morena Silvetti</p>
         <p>Desarrollo Web · Datos · GIS</p>
         <p><strong>Construyendo soluciones digitales con propósito.</strong></p>

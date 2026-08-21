@@ -1,0 +1,150 @@
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset universal */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Paleta a usar
+   Fondo:      #EFF4EC (verde agrisado muy claro)
+   Superficie: #FFFFFF (navbar y tarjetas)
+   Acento:     #2E7D5B (verde oscuro) - enlaces, botón, h2
+   Texto:      #1E2B1E
+   Footer:     #DFEBDD (banda verde suave)
+*/
+
+/* General */
+body {
+    background-color: #EFF4EC;
+    color: #1E2B1E;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2E7D5B;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Header y nav */
+.encabezado {
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: 16px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 28px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #2E7D5B;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*Contenedores*/
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.contenedor-imagen {
+    width: 45%;
+    border-radius: 16px;
+}
+
+.enlace-destacado {
+    background-color: #2E7D5B;
+    color: #EFF4EC;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.card a {
+    color: #2E7D5B;
+    font-weight: 600;
+}
+
+/*Tarjetas*/
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;    
+    border-radius: 12px;
+    width: 320px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    color: #1E2B1E;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #1E2B1E;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.imagen-contacto {
+    width: 20%;
+    border-radius: 16px;
+}
+
+/* Footer */
+.pie {
+    background-color: #DFEBDD;
+    padding: 40px;
+}

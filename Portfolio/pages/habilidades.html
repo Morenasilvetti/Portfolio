@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Morena Silvetti</title>
 </head>
 
 <body>
-    <header>
+    <header class="encabezado">
         <p>Morena Silvetti</p>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="habilidades.html">Habilidades</a></li>
@@ -21,38 +23,48 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Lo que estoy aprendiendo</h1>
-            <p>Una de las cosas que más disfruto de la tecnología es que siempre hay algo nuevo para aprender.</p>
-            <p>Actualmente estoy construyendo conocimientos en distintas áreas que se complementan entre sí.</p>
+    <main class="contenido">
+        <section class="contenedor">
+            <div class="contenedor-texto">
+
+                <h1>Lo que estoy aprendiendo</h1>
+                <p>Una de las cosas que más disfruto de la tecnología es que siempre hay algo nuevo para aprender.</p>
+                <p>Actualmente estoy construyendo conocimientos en distintas áreas que se complementan entre sí.</p>
+            </div>
         </section>
 
-        <section>
-            <ul>
-                <li>
-                    <strong>Desarrollo Web</strong> <br>
-                    <em>HTML · CSS · JavaScript · React · Next.js</em>
-                    <p>Desarrollo de interfaces web buscando combinar funcionalidad, claridad y una buena
-                        experiencia de usuario.</p>
-                </li>
-                <li>
-                    <strong>Datos y bases de datos</strong> <br>
-                    <em>PostgreSQL · Supabase · Power BI · R</em>
-                    <p>Experiencia trabajando con datos, procesos de transformación, análisis y visualización
-                        de información.</p>
-                </li>
-                <li>
-                    <strong>GIS y territorio</strong> <br>
-                    <em>ArcGIS · QGIS · GeoServer</em>
-                    <p>Herramientas orientadas al análisis espacial, visualización y gestión de información
-                        geográfica.</p>
-                </li>
-            </ul>
+        <section class="tarjetas">
+            <article class="card">
+                <h2>Desarrollo Web</h2>
+                <p><em>HTML · CSS · JavaScript · React · Next.js</em></p>
+                <p>Desarrollo de interfaces web buscando combinar funcionalidad, claridad y una buena experiencia de
+                    usuario.</p>
+                <img src="../assets/img/dev.jpg" alt="Desarrollador web">
+            </article>
+            <article class="card">
+                <h2>Datos y bases de datos</h2>
+                <p><em>PostgreSQL · Supabase · Power BI · R</em></p>
+                <p>Experiencia trabajando con datos, procesos de transformación, análisis y visualización de
+                    información.</p>
+                <img src="../assets/img/datos.jpg" alt="Dashboard con gráficos de datos">
+            </article>
+            <article class="card">
+                <h2>GIS y territorio</h2>
+                <p><em>ArcGIS · QGIS · GeoServer</em></p>
+                <p>Herramientas orientadas al análisis espacial, visualización y gestión de información
+                    geográfica.</p>
+                 <img src="../assets/img/territorio.jpg" alt="Agricultura de precisión">
+            </article>
+            <article class="card">
+                <h2>Siempre aprendiendo</h2>
+                <p>La tecnología avanza todos los días y nos invita a seguir creciendo, explorando nuevas
+                    herramientas y desafiándonos en nuevos proyectos.</p>
+                 <img src="../assets/img/aprendizaje.png" alt="Cuaderno con notas">
+            </article>
         </section>
     </main>
 
-    <footer>
+    <footer class="pie">
         <p>© 2026 Morena Silvetti</p>
         <p>Desarrollo Web · Datos · GIS</p>
         <p><strong>Construyendo soluciones digitales con propósito.</strong></p>
