@@ -8,7 +8,6 @@
     margin: 0;
 }
 
-
 /* Paleta a usar
    Fondo:      #EFF4EC (verde agrisado muy claro)
    Superficie: #FFFFFF (navbar y tarjetas)
@@ -17,21 +16,22 @@
    Footer:     #DFEBDD (banda verde suave)
 */
 
+/* Mobile*/
+
 /* General */
 body {
     background-color: #EFF4EC;
     color: #1E2B1E;
     font-family: "Noto Sans", sans-serif;
-    margin: 0;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #2E7D5B;
 }
@@ -41,20 +41,23 @@ p {
     line-height: 1.6;
 }
 
-/* Header y nav */
+/* Header y nav: apilados en mobile */
 .encabezado {
     background-color: #FFFFFF;
-    padding: 20px 40px;
+    padding: 16px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 12px;
     border-radius: 12px;
-    margin: 16px;
+    margin: 12px;
 }
 
 .menu ul {
     display: flex;
-    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 
 .menu li {
@@ -67,16 +70,18 @@ p {
     text-decoration: none;
 }
 
-/*Contenedores*/
-
+/* Contenedores*/
 .contenedor {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 40px;
+    display: grid;
+    grid-template-areas:
+        "texto"
+        "imagen";
+    gap: 24px;
+    padding: 20px;
 }
 
 .contenedor-texto {
+    grid-area: texto;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -84,7 +89,19 @@ p {
 }
 
 .contenedor-imagen {
-    width: 45%;
+    grid-area: imagen;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.contenedor-imagen img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.imagen-contacto {
+    grid-area: imagen;
+    width: 100%;
     border-radius: 16px;
 }
 
@@ -97,30 +114,18 @@ p {
     border-radius: 8px;
 }
 
-.contenedor-imagen img {
-    max-width: 100%;
-    border-radius: 16px;
-}
-
-.card a {
-    color: #2E7D5B;
-    font-weight: 600;
-}
-
-/*Tarjetas*/
-
+/* Tarjetas*/
 .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .card {
     background-color: #FFFFFF;
-    padding: 20px;    
+    padding: 20px;
     border-radius: 12px;
-    width: 320px;
 }
 
 .card h2 {
@@ -138,13 +143,65 @@ p {
     border-radius: 8px;
 }
 
-.imagen-contacto {
-    width: 20%;
-    border-radius: 16px;
+.card a {
+    color: #2E7D5B;
+    font-weight: 600;
 }
 
 /* Footer */
 .pie {
     background-color: #DFEBDD;
-    padding: 40px;
+    padding: 24px 20px;
+}
+
+.pie a {
+    color: #2E7D5B;
+    font-weight: 600;
+}
+
+/* Desktop*/
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Navbar vuelve a fila */
+    .encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+        margin: 16px;
+    }
+
+    .menu ul {
+        gap: 28px;
+    }
+
+    /* Contenedor: de 1 columna a 2 */
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "texto imagen";
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .imagen-contacto {
+        width: 70%;
+    }
+
+    /* Tarjetas: de 1 columna a 3 */
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;
+    }
+
+    .pie {
+        padding: 40px;
+    }
 }
