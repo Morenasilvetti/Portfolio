@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Noto Sans (este partial debe cargarse primero en main.scss
+// para que el @import quede al inicio del CSS compilado)
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+
+    @include desktop {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $color-acento;
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}

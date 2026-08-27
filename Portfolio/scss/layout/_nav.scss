@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+
+// Enlaces de navegación y sus estados
+.nav-propia .nav-link {
+    color: $color-acento;
+    font-weight: 600;
+    transition: $transicion;
+
+    &:hover,
+    &:focus {
+        color: $color-texto;
+    }
+
+    &:active {
+        color: $color-acento-active;
+    }
+}

@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+// Media query desktop reutilizable
+@mixin desktop {
+    @media (min-width: $bp-desktop) {
+        @content;
+    }
+}

@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Secciones de contenido (grid mobile-first)
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "texto"
+        "imagen";
+    gap: 24px;
+    padding: 20px;
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "texto imagen";
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    }
+}
+
+.contenedor-texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.contenedor-imagen {
+    grid-area: imagen;
+    width: 100%;
+    border-radius: $radio-grande;
+
+    img {
+        max-width: 100%;
+        border-radius: $radio-grande;
+    }
+}
+
+.imagen-contacto {
+    grid-area: imagen;
+    width: 100%;
+    border-radius: $radio-grande;
+
+    @include desktop {
+        width: 70%;
+    }
+}

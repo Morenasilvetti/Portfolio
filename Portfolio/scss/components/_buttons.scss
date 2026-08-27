@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+// Botón/enlace destacado
+.enlace-destacado {
+    background-color: $color-acento;
+    color: $color-fondo;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: $radio-chico;
+    transition: $transicion;
+
+    &:hover,
+    &:focus {
+        background-color: $color-acento-hover;
+    }
+
+    &:active {
+        background-color: $color-acento-active;
+    }
+}

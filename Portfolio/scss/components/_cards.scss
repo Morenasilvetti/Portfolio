@@ -1,0 +1,50 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Grilla de tarjetas
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;
+    }
+}
+
+// Tarjeta individual
+.card {
+    background-color: $color-superficie;
+    padding: 20px;
+    border-radius: $radio-medio;
+    transition: $transicion;
+
+    &:hover {
+        background-color: $color-footer;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.25rem;
+        color: $color-texto;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: $radio-chico;
+    }
+
+    a {
+        color: $color-acento;
+        font-weight: 600;
+        transition: $transicion;
+
+        &:hover,
+        &:focus {
+            color: $color-acento-hover;
+            text-decoration: underline;
+        }
+    }
+}

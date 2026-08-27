@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+
+// Galería con carousel de Bootstrap
+.galeria {
+    padding: 20px;
+
+    .carousel {
+        border-radius: $radio-grande;
+        overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    img {
+        height: 300px;
+        object-fit: cover;
+    }
+}

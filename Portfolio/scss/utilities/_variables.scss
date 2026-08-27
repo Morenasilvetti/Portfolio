@@ -1,0 +1,22 @@
+// Paleta del sitio
+$color-fondo: #EFF4EC;        // verde agrisado muy claro
+$color-superficie: #FFFFFF;   // navbar y tarjetas
+$color-acento: #2E7D5B;       // enlaces, botón, h2
+$color-acento-hover: #1F5A42; // estado hover/focus
+$color-acento-active: #14402F;// estado active
+$color-texto: #1E2B1E;
+$color-footer: #DFEBDD;       // banda verde suave
+
+// Tipografía
+$fuente-principal: "Noto Sans", sans-serif;
+
+// Bordes
+$radio-chico: 8px;
+$radio-medio: 12px;
+$radio-grande: 16px;
+
+// Transiciones
+$transicion: all 0.3s ease;
+
+// Breakpoints
+$bp-desktop: 1024px;

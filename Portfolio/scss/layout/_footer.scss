@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.pie {
+    background-color: $color-footer;
+    padding: 24px 20px;
+
+    @include desktop {
+        padding: 40px;
+    }
+
+    a {
+        color: $color-acento;
+        font-weight: 600;
+        transition: $transicion;
+
+        &:hover,
+        &:focus {
+            color: $color-acento-hover;
+            text-decoration: underline;
+        }
+    }
+}

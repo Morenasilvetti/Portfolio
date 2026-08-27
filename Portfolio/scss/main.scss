@@ -1,0 +1,17 @@
+// Punto de entrada único — compilar con:
+// npx sass scss/main.scss styles/style.css
+
+// Base (tipografia va primero: contiene el @import de la fuente)
+@use "base/tipografia";
+@use "base/base";
+
+// Layout
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "layout/contenedores";
+
+// Componentes
+@use "components/cards";
+@use "components/buttons";
+@use "components/galeria";
