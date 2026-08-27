@@ -4,29 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Morena Silvetti</title>
 </head>
 
 <body>
-    <header class="encabezado">
-        <p>Morena Silvetti</p>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="formaciones.html">Formaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-propia">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Morena Silvetti</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formaciones.html">Formaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="contenido">
         <section class="contenedor">
             <div class="contenedor-texto">
-
                 <h1>Lo que estoy aprendiendo</h1>
                 <p>Una de las cosas que más disfruto de la tecnología es que siempre hay algo nuevo para aprender.</p>
                 <p>Actualmente estoy construyendo conocimientos en distintas áreas que se complementan entre sí.</p>
@@ -53,18 +62,18 @@
                 <p><em>ArcGIS · QGIS · GeoServer</em></p>
                 <p>Herramientas orientadas al análisis espacial, visualización y gestión de información
                     geográfica.</p>
-                 <img src="../assets/img/territorio.jpg" alt="Agricultura de precisión">
+                <img src="../assets/img/territorio.jpg" alt="Agricultura de precisión">
             </article>
             <article class="card">
                 <h2>Siempre aprendiendo</h2>
                 <p>La tecnología avanza todos los días y nos invita a seguir creciendo, explorando nuevas
                     herramientas y desafiándonos en nuevos proyectos.</p>
-                 <img src="../assets/img/aprendizaje.png" alt="Cuaderno con notas">
+                <img src="../assets/img/aprendizaje.png" alt="Cuaderno con notas">
             </article>
         </section>
     </main>
 
-        <footer class="pie">
+    <footer class="pie">
         <p>© 2026 Morena Silvetti</p>
         <p>Desarrollo Web · Datos · GIS</p>
         <p><strong>Construyendo soluciones digitales con propósito.</strong></p>
@@ -72,6 +81,9 @@
         <a href="https://www.linkedin.com/in/morena-silvetti-6aa3b62a1" target="_blank">LinkedIn</a> ·
         <a href="contacto.html">Contacto</a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

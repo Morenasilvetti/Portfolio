@@ -16,7 +16,7 @@
    Footer:     #DFEBDD (banda verde suave)
 */
 
-/* Mobile*/
+/* Mobile */
 
 /* General */
 body {
@@ -41,36 +41,25 @@ p {
     line-height: 1.6;
 }
 
-/* Header y nav: apilados en mobile */
-.encabezado {
+/* Navbar Bootstrap*/
+.nav-propia {
     background-color: #FFFFFF;
-    padding: 16px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
     border-radius: 12px;
     margin: 12px;
+    padding: 8px 16px;
 }
 
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+.nav-propia .navbar-brand {
+    font-weight: 800;
+    color: #1E2B1E;
 }
 
-.menu li {
-    list-style: none;
-}
-
-.menu a {
+.nav-propia .nav-link {
     color: #2E7D5B;
     font-weight: 600;
-    text-decoration: none;
 }
 
-/* Contenedores*/
+/* Contenedores */
 .contenedor {
     display: grid;
     grid-template-areas:
@@ -114,7 +103,7 @@ p {
     border-radius: 8px;
 }
 
-/* Tarjetas*/
+/* Tarjetas */
 .tarjetas {
     display: grid;
     grid-template-columns: 1fr;
@@ -148,6 +137,23 @@ p {
     font-weight: 600;
 }
 
+/* Galería */
+.galeria {
+    padding: 20px;
+}
+
+.galeria .carousel {
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.galeria img {
+    height: 300px;
+    object-fit: cover;
+}
+
 /* Footer */
 .pie {
     background-color: #DFEBDD;
@@ -159,7 +165,46 @@ p {
     font-weight: 600;
 }
 
-/* Desktop*/
+/* Estados interactivos */
+.nav-propia .nav-link,
+.enlace-destacado,
+.pie a,
+.card a,
+.card {
+    transition: all 0.3s ease;
+}
+
+.nav-propia .nav-link:hover,
+.nav-propia .nav-link:focus {
+    color: #1E2B1E;
+}
+
+.nav-propia .nav-link:active {
+    color: #14402F;
+}
+
+.enlace-destacado:hover,
+.enlace-destacado:focus {
+    background-color: #1F5A42;
+}
+
+.enlace-destacado:active {
+    background-color: #14402F;
+}
+
+.pie a:hover,
+.pie a:focus,
+.card a:hover,
+.card a:focus {
+    color: #1F5A42;
+    text-decoration: underline;
+}
+
+.card:hover {
+    background-color: #DFEBDD;
+}
+
+/* Desktop */
 @media (min-width: 1024px) {
 
     h1 {
@@ -170,16 +215,9 @@ p {
         font-size: 1.5rem;
     }
 
-    /* Navbar vuelve a fila */
-    .encabezado {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 40px;
+    .nav-propia {
         margin: 16px;
-    }
-
-    .menu ul {
-        gap: 28px;
+        padding: 12px 40px;
     }
 
     /* Contenedor: de 1 columna a 2 */
