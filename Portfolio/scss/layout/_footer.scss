@@ -1,18 +1,18 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
 
 .pie {
     background-color: $color-footer;
-    padding: 24px 20px;
+    padding: 24px $espacio-base;
 
     @include desktop {
-        padding: 40px;
+        padding: $espacio-base * 2;
     }
 
     a {
-        color: $color-acento;
-        font-weight: 600;
-        transition: $transicion;
+        @extend %enlace-verde;
+        @include transicion(color);
 
         &:hover,
         &:focus {

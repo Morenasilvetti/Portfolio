@@ -6,3 +6,9 @@
         @content;
     }
 }
+
+// Mixin con parámetros: transición configurable
+// (propiedad a animar y duración, con valores por defecto)
+@mixin transicion($propiedad: all, $duracion: 0.3s) {
+    transition: $propiedad $duracion ease;
+}

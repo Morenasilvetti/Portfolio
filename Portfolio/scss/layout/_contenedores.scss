@@ -8,14 +8,14 @@
         "texto"
         "imagen";
     gap: 24px;
-    padding: 20px;
+    padding: $espacio-base;
 
     @include desktop {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "texto imagen";
         align-items: center;
-        gap: 40px;
-        padding: 40px;
+        gap: $espacio-base * 2;
+        padding: $espacio-base * 2;
     }
 }
 

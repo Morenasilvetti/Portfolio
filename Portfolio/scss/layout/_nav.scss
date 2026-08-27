@@ -1,10 +1,11 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
 
 // Enlaces de navegación y sus estados
 .nav-propia .nav-link {
-    color: $color-acento;
-    font-weight: 600;
-    transition: $transicion;
+    @extend %enlace-verde;
+    @include transicion(color);
 
     &:hover,
     &:focus {

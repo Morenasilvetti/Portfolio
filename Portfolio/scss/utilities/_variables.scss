@@ -15,8 +15,8 @@ $radio-chico: 8px;
 $radio-medio: 12px;
 $radio-grande: 16px;
 
-// Transiciones
-$transicion: all 0.3s ease;
+// Espaciado (con operadores: $espacio-base * 2 = 40px)
+$espacio-base: 20px;
 
 // Breakpoints
 $bp-desktop: 1024px;

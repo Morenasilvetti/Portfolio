@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+// Estilos base compartidos via @extend
+
+// Superficie blanca redondeada (navbar y tarjetas)
+%superficie {
+    background-color: $color-superficie;
+    border-radius: $radio-medio;
+}
+
+// Enlace verde del sitio
+%enlace-verde {
+    color: $color-acento;
+    font-weight: 600;
+}
